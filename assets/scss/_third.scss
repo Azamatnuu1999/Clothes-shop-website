@@ -1,0 +1,105 @@
+.third{
+    text-align: center;
+    .contain{
+        color: black;
+    }
+    h1{
+        font-family: 'Cormorant';
+    }
+    .contain{
+        .sliderr{
+            ul{
+                li{
+                    *{
+                        margin: 0;
+                        padding: 0;
+                    }
+                    width: 33.3%;
+                    img{
+                        width: 90%;
+                    }
+                    .bottom{
+                        h4,p,h3{
+                            color: black;
+                        }
+                        h4{
+                            color: red;
+                            del{
+                                margin-right: 8px;
+                                color: grey;
+                            }
+                        }
+                    }
+                }
+                li:hover{
+                    transform: scale(1.02);
+                    transition-duration: 0.3s;
+                    transition-timing-function: linear;
+                    cursor: pointer;
+                }
+            }
+            .right{
+                background-color: white;
+                color: black;
+                border-radius: 50%;
+                width: 100px;
+                padding: 39px;
+                height: 100px;
+                box-shadow: 0 0 7px grey;
+            }
+            .left{
+                background-color: white;
+                color: black;
+                border-radius: 50%;
+                width: 100px;
+                padding: 39px;
+                height: 100px;
+                box-shadow: 0 0 7px grey;
+            }
+        }
+    }
+}
+
+@media(max-width:1000px){
+    .contain{
+        .sliderr{
+            ul{
+                li{
+                    *{
+                        margin: 0;
+                        padding: 0;
+                    }
+                    width: 50% !important;
+                }
+            }
+            .right{
+                color: black !important;
+                padding: 13px !important;
+                width: 50px !important;
+                height: 50px !important;
+            }
+            .left{
+                color: black !important;
+                padding: 13px !important;
+                width: 50px !important;
+                height: 50px !important;
+            }
+        }
+    }
+}
+
+@media(max-width:600px){
+    .contain{
+        .sliderr{
+            ul{
+                li{
+                    *{
+                        margin: 0;
+                        padding: 0;
+                    }
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+}

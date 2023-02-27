@@ -1,0 +1,51 @@
+.fourth{
+    background-color: #254A5A;
+    margin: 50px 0 20px;
+    .contain{
+        position: relative;
+        height: 400px;
+        background-image: url(../media/Ellipse\ 6.png), url(../media/Rectangle\ 7.png);
+            background-repeat: no-repeat;
+            background-position: 60% 0;
+        .sixty{
+            color: white;
+            width: 60%;
+            padding-top: 40px;
+            padding-right: 8%;
+            *{
+                color: white;
+            }
+            h4,h1{
+                font-family: 'Cormorant';
+            }
+            h4{
+                margin: 20px 0 0;
+            }
+            h1{
+                margin-top: 0;
+            }
+        }
+        .forty{
+            position: absolute;
+            right: 0;
+            top: 10%;
+            width: 40%;
+        }
+    }
+}
+
+@media(max-width:700px){
+    .fourth{
+        background-image: url(../media/image\ 25.png);
+        .contain{
+            display: flex;
+            flex-wrap: wrap;
+            .sixty{
+                width: 100%;
+            }
+            .forty{
+                display: none;
+            }
+        }
+    }
+}
